@@ -1,0 +1,151 @@
+/* TINNASWIN - Estilos principales */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fffafc;
+  color: #333333;
+}
+
+/* Encabezado */
+header {
+  background: #ffffff;
+  border-bottom: 2px solid #fadadd;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #d88ca0;
+  letter-spacing: 2px;
+}
+
+/* Menú */
+nav a {
+  color: #444444;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #d88ca0;
+}
+
+/* Sección principal */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #fadadd, #ffffff);
+}
+
+.hero h1 {
+  font-size: 56px;
+  color: #b76e79;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 22px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #555555;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color: #f7a8b8;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #e88fa4;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #d88ca0;
+  border: 2px solid #f7a8b8;
+}
+
+.btn-secondary:hover {
+  background-color: #fff0f4;
+}
+
+/* Secciones */
+section {
+  padding: 70px 20px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 42px;
+  color: #b76e79;
+  margin-bottom: 20px;
+}
+
+/* Tarjetas de productos */
+.product-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.product-card h3 {
+  color: #444444;
+  margin-top: 15px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d88ca0;
+}
+
+/* Pie de página */
+footer {
+  background: #fff0f4;
+  text-align: center;
+  padding: 30px;
+  color: #666666;
+}
+
+/* Adaptación para celular */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
