@@ -1,39 +1,28 @@
-// TINNASWIN - Funciones interactivas
+// TINNASWIN - Funciones básicas
 
-// Mostrar mensaje de bienvenida cuando cargue la página
+// Mensaje en consola al cargar la página
 window.addEventListener("load", function () {
-  console.log("Bienvenida a TINNASWIN 💖");
+  console.log("TINNASWIN cargado correctamente 💖");
 });
 
-// Función para ir a la sección de productos
-function comprarAhora() {
-  const tienda = document.getElementById("tienda");
-  if (tienda) {
-    tienda.scrollIntoView({
-      behavior: "smooth"
-    });
-  }
-}
+// Desplazamiento suave para enlaces internos
+document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    const destino = document.querySelector(this.getAttribute("href"));
+    if (destino) {
+      e.preventDefault();
+      destino.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  });
+});
 
 // Función para abrir WhatsApp
-function contactarWhatsApp() {
+function abrirWhatsApp() {
   const numero = "573013464711";
   const mensaje = encodeURIComponent(
     "Hola, estoy interesada en los productos de TINNASWIN 💖"
   );
-  const url = https://wa.me/${numero}?text=${mensaje};
-  window.open(url, "_blank");
-}
-
-// Botón para volver al inicio
-function volverAlInicio() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-
-// Confirmación simple al hacer clic en comprar
-function agregarAlCarrito(nombreProducto) {
-  alert(Has seleccionado: ${nombreProducto} 💖);
+  window.open(https://wa.me/${numero}?text=${mensaje}, "_blank");
 }
