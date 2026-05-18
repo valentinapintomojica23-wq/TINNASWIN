@@ -1,137 +1,157 @@
-/* TINNASWIN - Estilos principales */
+/* TINNASWIN - Diseño premium rosado */
 
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #fffafc;
-  color: #333333;
+  font-family: Arial, sans-serif;
+  background: #fffafc;
+  color: #333;
 }
 
 /* Encabezado */
 header {
-  background: #ffffff;
-  border-bottom: 2px solid #fadadd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
   padding: 20px 40px;
+  border-bottom: 1px solid #f7d7e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
-  color: #d88ca0;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  color: #d97a9a;
 }
 
-/* Menú */
 nav a {
-  color: #444444;
+  margin-left: 20px;
   text-decoration: none;
-  margin: 0 15px;
+  color: #555;
   font-weight: 600;
 }
 
 nav a:hover {
-  color: #d88ca0;
+  color: #d97a9a;
 }
 
-/* Sección principal */
+/* Hero principal */
 .hero {
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #fadadd, #ffffff);
+  padding: 120px 20px;
+  background:
+    radial-gradient(circle at top right, rgba(247, 215, 224, 0.7), transparent 40%),
+    radial-gradient(circle at bottom left, rgba(255, 245, 248, 0.9), transparent 40%),
+    linear-gradient(135deg, #fff7fa, #ffffff);
 }
 
 .hero h1 {
   font-size: 56px;
-  color: #b76e79;
+  color: #c85d82;
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 22px;
   max-width: 700px;
-  margin: 0 auto 30px;
-  color: #555555;
+  margin: 0 auto 35px;
+  font-size: 22px;
+  color: #666;
 }
 
 /* Botones */
 .btn {
   display: inline-block;
+  margin: 8px;
   padding: 14px 32px;
-  border-radius: 40px;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: bold;
-  margin: 10px;
   transition: 0.3s;
 }
 
 .btn-primary {
-  background-color: #f7a8b8;
-  color: #ffffff;
+  background: #f7a8b8;
+  color: white;
 }
 
 .btn-primary:hover {
-  background-color: #e88fa4;
+  background: #ef8fa6;
 }
 
 .btn-secondary {
-  background-color: #ffffff;
-  color: #d88ca0;
+  background: white;
+  color: #d97a9a;
   border: 2px solid #f7a8b8;
 }
 
 .btn-secondary:hover {
-  background-color: #fff0f4;
+  background: #fff3f7;
 }
 
 /* Secciones */
 section {
-  padding: 70px 20px;
+  padding: 80px 20px;
 }
 
 section h2 {
   text-align: center;
   font-size: 42px;
-  color: #b76e79;
+  color: #c85d82;
   margin-bottom: 20px;
 }
 
-/* Tarjetas de productos */
+/* Productos */
 .product-card {
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
+  max-width: 360px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 24px;
   padding: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
   text-align: center;
 }
 
 .product-card img {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 18px;
 }
 
 .product-card h3 {
-  color: #444444;
-  margin-top: 15px;
+  margin-top: 16px;
+  color: #444;
 }
 
 .price {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
-  color: #d88ca0;
+  color: #d97a9a;
 }
 
 /* Pie de página */
 footer {
-  background: #fff0f4;
+  background: #fff0f5;
   text-align: center;
   padding: 30px;
-  color: #666666;
+  color: #777;
 }
 
-/* Adaptación para celular */
+/* Responsive */
 @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
   .hero h1 {
     font-size: 38px;
   }
@@ -140,12 +160,7 @@ footer {
     font-size: 18px;
   }
 
-  .logo {
-    font-size: 28px;
-  }
-
-  nav a {
-    display: block;
-    margin: 10px 0;
+  section h2 {
+    font-size: 32px;
   }
 }
