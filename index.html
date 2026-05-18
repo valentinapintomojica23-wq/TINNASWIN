@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TINNASWIN</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:#fff5f7;
+}
+
+header{
+    background:#ff4f81;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.producto{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.producto img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.info{
+    padding:15px;
+    text-align:center;
+}
+
+button{
+    background:#ff4f81;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#ffe0ea;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>👙 TINNASWIN</h1>
+<p>Bikinis modernos y elegantes</p>
+</header>
+
+<section class="galeria">
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f">
+<div class="info">
+<h2>Bikini Floral</h2>
+<p>$80.000</p>
+<button>Comprar</button>
+</div>
+</div>
+
+<div class="producto">
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c">
+<div class="info">
+<h2>Bikini Rosado</h2>
+<p>$95.000</p>
+<button>Comprar</button>
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 TINNASWIN
+</footer>
+
+</body>
+</html>
